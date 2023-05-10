@@ -1,0 +1,21 @@
+@import 'variables';
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+// Makes the html fill the entire screen
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  // Change the color of the background to use the variable $bg-color
+  background-color: $bg_color;
+  // Close to white text
+  color: $text_color;
+  // Make the text 5 times the default size
+    font-size: 2em;
+}
+
