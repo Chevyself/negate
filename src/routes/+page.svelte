@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {flip} from "../util/flip_logic"
+    import {flip, flipSentence} from "../util/flip_logic"
 
     let content = "";
     let negate: string = "";
@@ -80,7 +80,7 @@
                 let target = event.target;
                 if (target instanceof HTMLInputElement) {
                     content = target.value;
-                    negate = flip(content);
+                    negate = flipSentence(content);
 
                     // Trigger the fade-in animation
                     let element = document.querySelector('.fade-in');
